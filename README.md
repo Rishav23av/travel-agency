@@ -69,12 +69,40 @@ A modern travel application that provides comprehensive destination information,
 
 3. **Environment Configuration**
    
-   Create a `.env` file in the `server` directory:
-   ```env
-   MONGO_URI=mongodb://localhost:27017/travel-agency
-   JWT_SECRET=your-super-secret-jwt-key-here
-   PORT=5001
+   **Quick Setup (Recommended):**
+   ```bash
+   # Run the setup script to create .env file
+   ./setup-env.sh
    ```
+   
+   **Manual Setup:**
+   Create a `.env` file in the root directory:
+   ```env
+   # Server Configuration
+   PORT=5001
+   NODE_ENV=development
+   
+   # Database Configuration
+   MONGO_URI=mongodb://localhost:27017/travel-agency
+   
+   # JWT Configuration
+   JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+   
+   # API Keys
+   FLIGHT_API_KEY=689b0813ee7a9992a776e96a
+   AVIATION_STACK_API_KEY=YOUR_AVIATION_STACK_KEY
+   
+   # Default User Passwords (for development only)
+   ADMIN_PASSWORD=admin123
+   USER_PASSWORD=user123
+   
+   # Client Configuration
+   REACT_APP_API_BASE_URL=http://localhost:5001/api
+   REACT_APP_FLIGHT_API_KEY=689b0813ee7a9992a776e96a
+   REACT_APP_AVIATION_STACK_API_KEY=YOUR_AVIATION_STACK_KEY
+   ```
+   
+   **⚠️ Security Note:** The `.env` file is automatically added to `.gitignore` and will never be committed to version control.
 
 4. **Database Setup**
    ```bash

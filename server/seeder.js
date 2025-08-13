@@ -66,7 +66,7 @@ const seedData = async () => {
     const adminUser = new User({
       name: 'Admin User',
       email: 'admin@travelagency.com',
-      password: 'admin123',
+              password: process.env.ADMIN_PASSWORD || 'admin123',
       role: 'admin'
     });
     await adminUser.save();
@@ -76,7 +76,7 @@ const seedData = async () => {
     const regularUser = new User({
       name: 'John Doe',
       email: 'user@example.com',
-      password: 'user123',
+              password: process.env.USER_PASSWORD || 'user123',
       role: 'user'
     });
     await regularUser.save();
@@ -93,8 +93,8 @@ const seedData = async () => {
 
     console.log('Database seeded successfully!');
     console.log('\nTest Accounts:');
-    console.log('Admin - Email: admin@travelagency.com, Password: admin123');
-    console.log('User - Email: user@example.com, Password: user123');
+      console.log(`Admin - Email: admin@travelagency.com, Password: ${process.env.ADMIN_PASSWORD || 'admin123'}`);
+  console.log(`User - Email: user@example.com, Password: ${process.env.USER_PASSWORD || 'user123'}`);
 
     process.exit(0);
   } catch (error) {
