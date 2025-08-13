@@ -1,0 +1,297 @@
+.dashboard {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.user-info p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.add-package-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.add-package-btn:hover {
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 10px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.2s ease;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.tab:hover:not(.active) {
+  background: #e9ecef;
+  color: #333;
+}
+
+.tab-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.bookings-grid,
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.booking-card,
+.package-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.booking-card:hover,
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.booking-image,
+.package-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.booking-image img,
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking-info,
+.package-info {
+  padding: 25px;
+}
+
+.booking-info h3,
+.package-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.location {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 15px;
+}
+
+.booking-status {
+  margin-bottom: 15px;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status.confirmed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.booking-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.package-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background: #28a745;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.empty-state p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.browse-packages-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.browse-packages-btn:hover {
+  transform: translateY(-2px);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .user-info h1 {
+    font-size: 2rem;
+  }
+  
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .add-package-btn,
+  .logout-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .tabs {
+    flex-direction: column;
+  }
+  
+  .bookings-grid,
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+}
