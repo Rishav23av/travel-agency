@@ -65,7 +65,7 @@ MONGO_URI=mongodb://localhost:27017/travel-agency
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 
 # API Keys
-FLIGHT_API_KEY=689b0813ee7a9992a776e96a
+FLIGHT_API_KEY=*********************************
 AVIATION_STACK_API_KEY=YOUR_AVIATION_STACK_KEY
 
 # Default User Passwords (for development only)
@@ -74,7 +74,7 @@ USER_PASSWORD=user123
 
 # Client Configuration
 REACT_APP_API_BASE_URL=http://localhost:5001/api
-REACT_APP_FLIGHT_API_KEY=689b0813ee7a9992a776e96a
+REACT_APP_FLIGHT_API_KEY=*********************************
 REACT_APP_AVIATION_STACK_API_KEY=YOUR_AVIATION_STACK_KEY
 ```
 
