@@ -35,7 +35,7 @@ The Travel Agency app now includes comprehensive flight search and tracking func
 
 The API key is configured in `client/src/services/api.js`:
 ```javascript
-const FLIGHT_API_KEY = '689b0813ee7a9992a776e96a';
+
 ```
 
 ## Usage Limits
