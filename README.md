@@ -89,7 +89,7 @@ A modern travel application that provides comprehensive destination information,
    JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
    
    # API Keys
-   FLIGHT_API_KEY=689b0813ee7a9992a776e96a
+   FLIGHT_API_KEY=*****************
    AVIATION_STACK_API_KEY=YOUR_AVIATION_STACK_KEY
    
    # Default User Passwords (for development only)
@@ -98,7 +98,7 @@ A modern travel application that provides comprehensive destination information,
    
    # Client Configuration
    REACT_APP_API_BASE_URL=http://localhost:5001/api
-   REACT_APP_FLIGHT_API_KEY=689b0813ee7a9992a776e96a
+   REACT_APP_FLIGHT_API_KEY=**************
    REACT_APP_AVIATION_STACK_API_KEY=YOUR_AVIATION_STACK_KEY
    ```
    
@@ -149,7 +149,7 @@ A modern travel application that provides comprehensive destination information,
 ### Unsplash API
 The Unsplash API key is already configured in the application:
 ```javascript
-const UNSPLASH_ACCESS_KEY = 'Kdt4piWRPdhPoOPeV5Jj-Xg8FoFAym06YMTMQyN826g';
+const UNSPLASH_ACCESS_KEY = '*********************************';
 ```
 
 ### Aviation Stack API (Optional)
